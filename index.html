@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Our Home Movies </title>
+
+  <!-- Google Fonts for 70s look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <!-- Video.js Base Styles & Library -->
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+  <!-- Local Custom CSS (We will create this next) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Title Bar Across the Top -->
+  <header class="header">
+    <h1 class="title">Harper Emilia Brown</h1>
+    <p class="subtitle">Family Memories • Vol. 1</p>
+  </header>
+
+  <!-- Main 2-Column Layout -->
+  <main class="album-layout">
+    
+    <!-- LEFT COLUMN: Sticky Video Player -->
+    <section class="player-column">
+      <div class="film-frame">
+        <video
+          id="family-player"
+          class="video-js vjs-big-play-centered"
+          controls
+          preload="auto"
+        ></video>
+        <div class="tape-label">
+          <span id="current-title">Select a Reel to Play</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIGHT COLUMN: Reel Gallery & Search -->
+    <section class="gallery-column">
+      <div class="gallery-header">
+
+      </div>
+
+      <!-- Polaroid Grid -->
+      <div id="reel-list" class="reel-grid">
+        <!-- JS will inject dynamic polaroid cards here -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
